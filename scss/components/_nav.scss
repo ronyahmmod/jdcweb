@@ -1,0 +1,30 @@
+.nav {
+  list-style-type: none;
+  display: flex;
+  margin-right: 2rem;
+  //   background-color: var(--color-white);
+  height: 100%;
+  align-items: center;
+  font-size: 1.7rem;
+  font-family: $font-family-text;
+  letter-spacing: 0.2rem;
+
+  &__item {
+    padding: 1rem;
+    &:not(:last-child) {
+      margin-right: $gutter-width;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: var(--color-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  &__link:hover {
+    color: var(--color-primary-light);
+  }
+}

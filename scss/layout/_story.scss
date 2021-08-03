@@ -1,0 +1,27 @@
+.story {
+  background-color: var(--color-white);
+  padding: 10rem 10rem;
+  &__headline {
+    font-family: $font-family-title;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    font-family: $font-family-text;
+    letter-spacing: 0.1rem;
+  }
+
+  &__author {
+    font-family: $font-family-title;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

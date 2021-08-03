@@ -1,0 +1,11 @@
+@keyframes move-up {
+  0% {
+    transform: translateX(7rem);
+  }
+  50% {
+    transform: translateX(-6rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

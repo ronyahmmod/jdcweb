@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  // position: fixed;
+  width: 100%;
+  //   top: 0;
+  //   left: 0;
+
+  z-index: 10;
+
+  &--sticky {
+    position: fixed;
+    background-color: var(--color-white);
+    opacity: 0.9;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+
+  &__logo-box {
+    display: flex;
+    flex: 1 0 0;
+    margin-left: 5rem;
+  }
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-family: $font-family-title;
+    letter-spacing: 0.3rem;
+  }
+
+  &__title {
+    font-size: 2.7rem;
+    font-weight: 200;
+  }
+
+  &__subtitle {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+}

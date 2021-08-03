@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #e32c10;
+  --color-primary-light: #eb6b58;
+  --color-primary-dark: #b6230d;
+
+  --color-secondary: #033a96;
+  --color-secondary-light: #4f75b6;
+  --color-secondary-dark: #022e78;
+
+  --color-white: #ffffff;
+
+  --color-grey-primary: #808080;
+  --color-grey-light: #e6e6e6;
+  --color-grey-dark: #333333;
+
+  --color-text-primary: #333333;
+
+  --box-shadow: 1rem 1rem 1.2rem -0.3rem rgba(0, 0, 0, 0.31);
+}
+
+// variable
+$gutter-width: 1rem;
+$font-family-text: 'Noto Sans', sans-serif;
+$font-family-title: 'Oswald', sans-serif;

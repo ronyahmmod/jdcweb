@@ -1,0 +1,23 @@
+@mixin align-block-center {
+  // parent element must be position:relative
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@mixin create-animation($name, $duration, $delay, $tf, $fm, $bv) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $tf;
+  animation-fill-mode: $fm;
+  backface-visibility: $bv;
+  -webkit-animation-name: $name;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-timing-function: $tf;
+  -webkit-animation-fill-mode: $fm;
+  -webkit-backface-visibility: $bv;
+}

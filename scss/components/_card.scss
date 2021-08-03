@@ -1,0 +1,27 @@
+.card {
+  width: 40rem;
+  box-shadow: var(--box-shadow);
+  padding-bottom: 3rem;
+
+  &__img {
+    width: 100%;
+    height: 40rem;
+  }
+
+  &__content {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--color-secondary-dark);
+  }
+
+  &__title {
+    font-family: $font-family-title;
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__occupation {
+    font-family: $font-family-text;
+    font-size: 1.2rem;
+  }
+}

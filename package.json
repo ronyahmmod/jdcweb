@@ -1,0 +1,27 @@
+{
+  "name": "college-website",
+  "version": "1.0.0",
+  "description": "A college website using HTML, CSS, JS. Tools: SCSS, node-sass\"",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass-w": "node-sass scss/main.scss css/style.css -w",
+    "build:sass": "node-sass -r --output-style compressed scss/main.scss -o css/style.css",
+    "watch:sass": "npm run build:sass && npm run build:sass -- -w",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:/Users/ronyj/Documents/workspace-local/js/college-website/.git/"
+  },
+  "keywords": [
+    "Website",
+    "College",
+    "Website"
+  ],
+  "author": "Eng. Md. Rony Ahmmod",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
