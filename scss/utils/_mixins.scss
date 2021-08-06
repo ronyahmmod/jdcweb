@@ -21,3 +21,11 @@
   -webkit-animation-fill-mode: $fm;
   -webkit-backface-visibility: $bv;
 }
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

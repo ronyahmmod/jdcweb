@@ -1,0 +1,35 @@
+.service {
+  background-color: var(--color-secondary-dark);
+  margin: 2rem 2rem;
+  box-shadow: var(--box-shadow);
+  color: var(--color-white);
+  transition: all 0.2s;
+
+  //   &:hover {
+  //     background-color: var(--color-secondary-light);
+  //   }
+
+  &__header {
+    background-color: var(--color-grey-light);
+    padding: 1.3rem 2rem;
+  }
+
+  &__body {
+    padding: 1.3rem 2rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $font-family-title;
+    color: var(--color-primary);
+    letter-spacing: 0.3rem;
+  }
+
+  &__text {
+    font-family: $font-family-text;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.7rem;
+  }
+}

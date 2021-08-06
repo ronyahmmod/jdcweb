@@ -13,6 +13,9 @@
     font-size: 1.7rem;
     font-family: $font-family-text;
     letter-spacing: 0.1rem;
+    &::before {
+      content: '&1234';
+    }
   }
 
   &__author {

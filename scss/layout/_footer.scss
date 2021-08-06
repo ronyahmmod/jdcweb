@@ -1,0 +1,94 @@
+.footer {
+  background-color: var(--color-secondary-light);
+  padding: 4rem 6rem;
+  font-family: $font-family-text;
+
+  &__map {
+    background-color: var(--color-white);
+    height: 100%;
+    box-shadow: var(--box-shadow);
+  }
+
+  &__developer {
+    background-color: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  &__list-section {
+    background-color: var(--color-white);
+    height: 100%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    font-size: 1.7rem;
+  }
+
+  &__menu-section {
+    background-color: var(--color-white);
+    height: 100%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+  }
+
+  &__menu {
+    list-style-type: none;
+    font-size: 1.7rem;
+  }
+
+  &__menu-item {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    transition: all 0.2s;
+  }
+
+  &__link:hover {
+    color: var(--color-primary-light);
+  }
+
+  &__copy {
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-family: $font-family-title;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__dev-user {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color-grey-primary);
+  }
+
+  &__dev-link:link,
+  &__dev-link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    font-size: 1.8rem;
+    transition: all 0.2s;
+  }
+
+  &__dev-link:hover {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+    transform: scale(2);
+  }
+
+  &__dev-text {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--color-grey-dark);
+  }
+}

@@ -39,6 +39,7 @@ body {
   align-items: center;
   height: 10rem;
   width: 100%;
+  justify-content: space-around;
   z-index: 10; }
   .navbar--sticky {
     position: fixed;
@@ -49,8 +50,13 @@ body {
     text-decoration: none; }
   .navbar__logo-box {
     display: flex;
-    flex: 1 0 0;
-    margin-left: 5rem; }
+    margin-right: 5rem;
+    margin-left: 2rem; }
+  .navbar__logo-container {
+    display: flex; }
+  .navbar__logo {
+    width: 7rem;
+    margin-right: 1rem; }
   .navbar__title-box {
     display: flex;
     flex-direction: column;
@@ -108,6 +114,78 @@ body {
     font-size: 2.4rem;
     font-weight: 400; }
 
+.footer {
+  background-color: var(--color-secondary-light);
+  padding: 4rem 6rem;
+  font-family: "Noto Sans", sans-serif; }
+  .footer__map {
+    background-color: var(--color-white);
+    height: 100%;
+    box-shadow: var(--box-shadow); }
+  .footer__developer {
+    background-color: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center; }
+  .footer__list-section {
+    background-color: var(--color-white);
+    height: 100%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem; }
+  .footer__list {
+    list-style-type: none;
+    font-size: 1.7rem; }
+  .footer__menu-section {
+    background-color: var(--color-white);
+    height: 100%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem; }
+  .footer__menu {
+    list-style-type: none;
+    font-size: 1.7rem; }
+  .footer__menu-item:not(:last-child) {
+    margin-bottom: 0.5rem; }
+  .footer__link:link, .footer__link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    transition: all 0.2s; }
+  .footer__link:hover {
+    color: var(--color-primary-light); }
+  .footer__copy {
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+  .footer__dev-user {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color-grey-primary); }
+  .footer__dev-link:link, .footer__dev-link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    font-size: 1.8rem;
+    transition: all 0.2s; }
+  .footer__dev-link:hover {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+    transform: scale(2); }
+  .footer__dev-text {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--color-grey-dark); }
+
+.row {
+  display: flex;
+  max-width: 153.6rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^='col'] {
+    flex: 1 0 0; }
+    .row [class^='col']:not(:last-child) {
+      margin-right: 6rem; }
+
 .hero {
   display: flex;
   justify-content: space-around;
@@ -127,6 +205,8 @@ body {
     font-size: 1.7rem;
     font-family: "Noto Sans", sans-serif;
     letter-spacing: 0.1rem; }
+    .story__text::before {
+      content: '&1234'; }
   .story__author {
     font-family: "Oswald", sans-serif;
     font-size: 1.3rem;
@@ -144,7 +224,8 @@ body {
   align-items: center;
   font-size: 1.7rem;
   font-family: "Noto Sans", sans-serif;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  flex: 1 0 0; }
   .nav__item {
     padding: 1rem; }
     .nav__item:not(:last-child) {
@@ -186,7 +267,8 @@ body {
   .card__content {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    color: var(--color-secondary-dark); }
+    color: var(--color-secondary-dark);
+    padding: 2rem; }
   .card__title {
     font-family: "Oswald", sans-serif;
     font-size: 1.9rem;
@@ -194,3 +276,61 @@ body {
   .card__occupation {
     font-family: "Noto Sans", sans-serif;
     font-size: 1.2rem; }
+
+.service {
+  background-color: var(--color-secondary-dark);
+  margin: 2rem 2rem;
+  box-shadow: var(--box-shadow);
+  color: var(--color-white);
+  transition: all 0.2s; }
+  .service__header {
+    background-color: var(--color-grey-light);
+    padding: 1.3rem 2rem; }
+  .service__body {
+    padding: 1.3rem 2rem; }
+  .service__title {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    color: var(--color-primary);
+    letter-spacing: 0.3rem; }
+  .service__text {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.7rem; }
+
+.list {
+  list-style-type: none; }
+  .list__item:not(:last-child) {
+    margin-bottom: 0.1rem; }
+  .list__link:link, .list__link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: "Noto Sans", sans-serif;
+    color: var(--color-primary);
+    padding: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--color-white);
+    text-transform: uppercase;
+    transition: all 0.2s; }
+  .list__link:hover {
+    background-color: var(--color-grey-light);
+    color: var(--color-primary-light); }
+
+.special-banner {
+  padding: 3rem 6rem; }
+  .special-banner__text {
+    font-size: 1.6rem;
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 0.2rem;
+    color: var(--color-white);
+    background-color: var(--color-grey-dark);
+    padding: 5rem 3rem;
+    box-shadow: var(--box-shadow); }
+  .special-banner__image-box {
+    position: relative; }
+  .special-banner__image {
+    height: 100%;
+    transform: translateY(-12rem); }
